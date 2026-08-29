@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
 <title>Life & Legacy Vault</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,380..600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    LIFE & LEGACY VAULT — styles.css
@@ -16,29 +15,29 @@
 /* ── CSS Custom Properties ── */
 :root {
   /* Brand Colors */
-  --navy-950: #050d1a;
-  --navy-900: #0a1628;
-  --navy-800: #0f2040;
-  --navy-700: #162c58;
-  --navy-600: #1e3a70;
-  --navy-500: #274d96;
-  --navy-400: #3a6abf;
-  --navy-300: #5b87d4;
-  --navy-200: #8aaee3;
-  --navy-100: #c4d6f4;
-  --navy-50:  #eef3fc;
+  --navy-950: #100c08;
+  --navy-900: #1c1610;
+  --navy-800: #2b2116;
+  --navy-700: #3b342a;
+  --navy-600: #55493a;
+  --navy-500: #6e6353;
+  --navy-400: #8b7a64;
+  --navy-300: #a38970;
+  --navy-200: #c6b49c;
+  --navy-100: #e3d6c0;
+  --navy-50:  #f6f0e4;
 
-  --gold-950: #1a1200;
-  --gold-900: #332400;
-  --gold-800: #5a3e00;
-  --gold-700: #7d5700;
-  --gold-600: #a37300;
-  --gold-500: #c99200;
-  --gold-400: #d4a017;
-  --gold-300: #e2ba45;
-  --gold-200: #eece7e;
-  --gold-100: #f7e7b6;
-  --gold-50:  #fdf8ea;
+  --gold-950: #2a1509;
+  --gold-900: #401d10;
+  --gold-800: #5c2e1a;
+  --gold-700: #7a3d22;
+  --gold-600: #8f5030;
+  --gold-500: #b5673b;
+  --gold-400: #c67d52;
+  --gold-300: #d9a17a;
+  --gold-200: #e7c4a8;
+  --gold-100: #f2dfce;
+  --gold-50:  #fbf3ec;
 
   --white: #ffffff;
   --off-white: #f9f8f5;
@@ -62,8 +61,8 @@
   --info-light: #e8f0fb;
 
   /* Typography */
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* Spacing */
   --space-1: 4px;
@@ -89,12 +88,12 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(5,13,26,0.08), 0 1px 2px rgba(5,13,26,0.06);
-  --shadow-md: 0 4px 12px rgba(5,13,26,0.10), 0 2px 6px rgba(5,13,26,0.08);
-  --shadow-lg: 0 10px 28px rgba(5,13,26,0.13), 0 4px 12px rgba(5,13,26,0.09);
-  --shadow-xl: 0 20px 48px rgba(5,13,26,0.16), 0 8px 20px rgba(5,13,26,0.10);
-  --shadow-gold: 0 4px 20px rgba(201,146,0,0.25);
-  --shadow-navy: 0 8px 32px rgba(5,13,26,0.40);
+  --shadow-sm: 0 1px 3px rgba(16,12,8,0.08), 0 1px 2px rgba(16,12,8,0.06);
+  --shadow-md: 0 4px 12px rgba(16,12,8,0.10), 0 2px 6px rgba(16,12,8,0.08);
+  --shadow-lg: 0 10px 28px rgba(16,12,8,0.13), 0 4px 12px rgba(16,12,8,0.09);
+  --shadow-xl: 0 20px 48px rgba(16,12,8,0.16), 0 8px 20px rgba(16,12,8,0.10);
+  --shadow-gold: 0 4px 20px rgba(181,103,59,0.25);
+  --shadow-navy: 0 8px 32px rgba(16,12,8,0.40);
 
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -178,9 +177,9 @@ p { margin-bottom: 0; }
   align-items: center;
   justify-content: space-between;
   padding: var(--space-4) var(--space-8);
-  background: rgba(10,22,40,0.95);
+  background: rgba(28,22,16,0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(201,146,0,0.2);
+  border-bottom: 1px solid rgba(181,103,59,0.2);
 }
 
 .lp-logo {
@@ -236,7 +235,7 @@ p { margin-bottom: 0; }
 
 .lp-nav-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 24px rgba(201,146,0,0.4);
+  box-shadow: 0 6px 24px rgba(181,103,59,0.4);
 }
 
 /* Hero */
@@ -245,14 +244,14 @@ p { margin-bottom: 0; }
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(39,77,150,0.35) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(110,99,83,0.35) 0%, transparent 70%);
 }
 
 .lp-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(201,146,0,0.08)'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(181,103,59,0.08)'/%3E%3C/svg%3E");
   pointer-events: none;
 }
 
@@ -261,8 +260,8 @@ p { margin-bottom: 0; }
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-2) var(--space-4);
-  background: rgba(201,146,0,0.12);
-  border: 1px solid rgba(201,146,0,0.3);
+  background: rgba(181,103,59,0.12);
+  border: 1px solid rgba(181,103,59,0.3);
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 600;
@@ -276,7 +275,7 @@ p { margin-bottom: 0; }
   color: var(--white);
   max-width: 820px;
   margin: 0 auto var(--space-6);
-  text-shadow: 0 2px 20px rgba(5,13,26,0.5);
+  text-shadow: 0 2px 20px rgba(16,12,8,0.5);
 }
 
 .lp-hero h1 em {
@@ -304,7 +303,7 @@ p { margin-bottom: 0; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   border-radius: var(--radius-full);
-  box-shadow: var(--shadow-gold), 0 0 60px rgba(201,146,0,0.2);
+  box-shadow: var(--shadow-gold), 0 0 60px rgba(181,103,59,0.2);
   transition: all var(--transition-base);
   border: none;
   cursor: pointer;
@@ -312,7 +311,7 @@ p { margin-bottom: 0; }
 
 .lp-cta-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 40px rgba(201,146,0,0.5), 0 0 80px rgba(201,146,0,0.25);
+  box-shadow: 0 8px 40px rgba(181,103,59,0.5), 0 0 80px rgba(181,103,59,0.25);
 }
 
 .lp-cta-sub {
@@ -349,7 +348,7 @@ p { margin-bottom: 0; }
 
 .lp-fear-card:hover {
   background: rgba(255,255,255,0.07);
-  border-color: rgba(201,146,0,0.25);
+  border-color: rgba(181,103,59,0.25);
   transform: translateY(-2px);
 }
 
@@ -444,7 +443,7 @@ p { margin-bottom: 0; }
 }
 
 .lp-module-item:hover {
-  border-color: rgba(201,146,0,0.3);
+  border-color: rgba(181,103,59,0.3);
   background: rgba(255,255,255,0.07);
 }
 
@@ -470,14 +469,14 @@ p { margin-bottom: 0; }
 .lp-pricing {
   padding: var(--space-20) var(--space-8);
   text-align: center;
-  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(39,77,150,0.2) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(110,99,83,0.2) 0%, transparent 70%);
 }
 
 .lp-price-card {
   max-width: 520px;
   margin: 0 auto;
   background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(201,146,0,0.35);
+  border: 1px solid rgba(181,103,59,0.35);
   border-radius: var(--radius-2xl);
   padding: var(--space-12);
   position: relative;
@@ -495,8 +494,8 @@ p { margin-bottom: 0; }
 .lp-price-badge {
   display: inline-block;
   padding: var(--space-1) var(--space-4);
-  background: rgba(201,146,0,0.2);
-  border: 1px solid rgba(201,146,0,0.4);
+  background: rgba(181,103,59,0.2);
+  border: 1px solid rgba(181,103,59,0.4);
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 700;
@@ -589,12 +588,12 @@ p { margin-bottom: 0; }
   z-index: 200;
   height: var(--header-height);
   background: var(--navy-900);
-  border-bottom: 2px solid rgba(201,146,0,0.25);
+  border-bottom: 2px solid rgba(181,103,59,0.25);
   display: flex;
   align-items: center;
   padding: 0 var(--space-6);
   gap: var(--space-4);
-  box-shadow: 0 4px 20px rgba(5,13,26,0.35);
+  box-shadow: 0 4px 20px rgba(16,12,8,0.35);
 }
 
 .app-header-logo {
@@ -665,12 +664,12 @@ p { margin-bottom: 0; }
 }
 
 .btn-header-action.gold {
-  background: rgba(201,146,0,0.15);
-  border-color: rgba(201,146,0,0.3);
+  background: rgba(181,103,59,0.15);
+  border-color: rgba(181,103,59,0.3);
   color: var(--gold-300);
 }
 .btn-header-action.gold:hover {
-  background: rgba(201,146,0,0.25);
+  background: rgba(181,103,59,0.25);
   color: var(--gold-200);
 }
 
@@ -751,7 +750,7 @@ p { margin-bottom: 0; }
 }
 
 .sidebar-nav-item.active {
-  background: rgba(201,146,0,0.10);
+  background: rgba(181,103,59,0.10);
   color: var(--gold-300);
   border-left-color: var(--gold-400);
   font-weight: 600;
@@ -783,7 +782,7 @@ p { margin-bottom: 0; }
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(5,13,26,0.7);
+  background: rgba(16,12,8,0.7);
   z-index: 150;
 }
 
@@ -795,7 +794,7 @@ p { margin-bottom: 0; }
   border-radius: var(--radius-xl);
   padding: var(--space-8) var(--space-10);
   margin-bottom: var(--space-8);
-  border: 1px solid rgba(201,146,0,0.2);
+  border: 1px solid rgba(181,103,59,0.2);
   position: relative;
   overflow: hidden;
 }
@@ -807,7 +806,7 @@ p { margin-bottom: 0; }
   right: -10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(201,146,0,0.08), transparent 70%);
+  background: radial-gradient(circle, rgba(181,103,59,0.08), transparent 70%);
   pointer-events: none;
 }
 
@@ -1176,7 +1175,7 @@ p { margin-bottom: 0; }
 }
 
 .meta-value.sensitive {
-  font-family: monospace;
+  font-family: 'IBM Plex Mono', monospace;
   letter-spacing: 0.04em;
   filter: blur(5px);
   transition: filter var(--transition-base);
@@ -1229,7 +1228,7 @@ p { margin-bottom: 0; }
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(5,13,26,0.6);
+  background: rgba(16,12,8,0.6);
   backdrop-filter: blur(4px);
   z-index: 500;
   display: flex;
@@ -1353,7 +1352,7 @@ p { margin-bottom: 0; }
 
 .form-control:focus {
   border-color: var(--navy-400);
-  box-shadow: 0 0 0 3px rgba(39,77,150,0.1);
+  box-shadow: 0 0 0 3px rgba(110,99,83,0.1);
 }
 
 .form-control::placeholder { color: var(--gray-300); }
@@ -1455,7 +1454,7 @@ select.form-control {
   font-weight: 700;
   color: var(--navy-950);
   flex-shrink: 0;
-  box-shadow: 0 3px 12px rgba(201,146,0,0.4);
+  box-shadow: 0 3px 12px rgba(181,103,59,0.4);
 }
 
 .person-card-name {
@@ -1608,7 +1607,7 @@ select.form-control {
 
 .search-input:focus {
   border-color: var(--navy-400);
-  box-shadow: 0 0 0 3px rgba(39,77,150,0.1);
+  box-shadow: 0 0 0 3px rgba(110,99,83,0.1);
 }
 
 /* ============================================================
@@ -1763,7 +1762,7 @@ select.form-control {
   body { background: white; color: black; font-size: 12pt; }
   .app-content { padding: 0; max-width: 100%; }
   .item-card { break-inside: avoid; border: 1px solid #ccc; }
-  .person-card-header { background: #1a2a4a !important; -webkit-print-color-adjust: exact; }
+  .person-card-header { background: #2b2116 !important; -webkit-print-color-adjust: exact; }
 }
 
 /* ============================================================
@@ -1779,34 +1778,34 @@ select.form-control {
   position: fixed;
   bottom: 0; left: 0; right: 0;
   z-index: 9999;
-  background: rgba(10,22,40,0.97);
-  border-top: 1px solid rgba(212,160,23,0.25);
+  background: rgba(28,22,16,0.97);
+  border-top: 1px solid rgba(198,125,82,0.25);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4px 16px;
   height: 30px;
   gap: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 #app-watermark .wm-left {
   display: flex; align-items: center; gap: 10px;
-  font-size: 0.68rem; color: rgba(196,214,244,0.6);
+  font-size: 0.68rem; color: rgba(227,214,192,0.6);
   white-space: nowrap;
 }
 #app-watermark .wm-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Fraunces', serif;
   font-size: 0.82rem; font-weight: 700;
-  color: var(--gold2, #e2ba45);
+  color: var(--gold2, #d9a17a);
   white-space: nowrap;
 }
 #app-watermark .wm-sep { color: rgba(255,255,255,0.15); }
 #app-watermark .wm-license {
-  font-size: 0.67rem; color: rgba(196,214,244,0.5);
+  font-size: 0.67rem; color: rgba(227,214,192,0.5);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 #app-watermark .wm-right {
-  font-size: 0.63rem; color: rgba(196,214,244,0.35);
+  font-size: 0.63rem; color: rgba(227,214,192,0.35);
   white-space: nowrap; text-align: right; flex-shrink: 0;
 }
 /* Watermark clearance handled on .app-main above */
@@ -1828,20 +1827,20 @@ select.form-control {
 <template id="doc-starthere">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:-apple-system,Inter,sans-serif;background:#f9f8f5;color:#33302c;line-height:1.7;padding:0;}
-.hero{background:#0a1628;color:#fff;padding:40px 24px;text-align:center;}
+body{font-family:-apple-system,Public Sans,sans-serif;background:#f9f8f5;color:#33302c;line-height:1.7;padding:0;}
+.hero{background:#1c1610;color:#fff;padding:40px 24px;text-align:center;}
 .hero h1{font-size:1.7rem;margin-bottom:8px;}
-.hero p{color:#c4d6f4;font-size:1rem;}
+.hero p{color:#e3d6c0;font-size:1rem;}
 .wrap{max-width:600px;margin:0 auto;padding:28px 20px 60px;}
 .step{display:flex;gap:16px;align-items:flex-start;background:#fff;border:2px solid #e8e6e1;border-radius:14px;padding:20px;margin-bottom:16px;}
-.num{width:40px;height:40px;border-radius:50%;background:#0a1628;color:#fff;font-weight:700;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.num{width:40px;height:40px;border-radius:50%;background:#1c1610;color:#fff;font-weight:700;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .step strong{display:block;font-size:1.05rem;margin-bottom:4px;}
 .step span{font-size:.95rem;color:#6e6860;}
-.warn{background:#fff8e6;border:2px solid #c47f00;border-radius:12px;padding:18px 20px;margin:20px 0;font-size:.95rem;color:#5a3e00;}
+.warn{background:#fff8e6;border:2px solid #c47f00;border-radius:12px;padding:18px 20px;margin:20px 0;font-size:.95rem;color:#5c2e1a;}
 .warn strong{color:#c47f00;}
-.file-list{background:#fdf8ea;border:2px solid #d4a017;border-radius:12px;padding:18px 20px;margin:20px 0;}
-.file-list strong{display:block;margin-bottom:10px;color:#7d5700;}
-.file-list div{font-family:monospace;font-size:.92rem;padding:4px 0;color:#33302c;}
+.file-list{background:#fbf3ec;border:2px solid #c67d52;border-radius:12px;padding:18px 20px;margin:20px 0;}
+.file-list strong{display:block;margin-bottom:10px;color:#7a3d22;}
+.file-list div{font-family:'IBM Plex Mono',monospace;font-size:.92rem;padding:4px 0;color:#33302c;}
 </style>
 <div class="hero">
   <h1>👋 Welcome! Start Here First</h1>
@@ -1886,16 +1885,16 @@ body{font-family:-apple-system,Inter,sans-serif;background:#f9f8f5;color:#33302c
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --navy:#0a1628;--navy2:#162c58;--navy3:#1e3a70;
-  --gold:#d4a017;--gold2:#e2ba45;--gold4:#fdf8ea;
+  --navy:#1c1610;--navy2:#3b342a;--navy3:#55493a;
+  --gold:#c67d52;--gold2:#d9a17a;--gold4:#fbf3ec;
   --white:#fff;--off:#f9f8f5;--g50:#f6f5f2;--g100:#f3f2ef;--g200:#e8e6e1;
   --g400:#b8b3aa;--g500:#908a80;--g600:#6e6860;--g700:#4e4a44;--g800:#33302c;
   --success:#1a7a4a;--s2:#e8f7ef;
   --danger:#b52b2b;--d2:#fdf0f0;
   --info:#1e5fa3;--i2:#e8f0fb;
   --warn:#c47f00;--w2:#fff8e6;
-  --fd:'Cormorant Garamond',Georgia,serif;
-  --fb:'Inter',-apple-system,sans-serif;
+  --fd:'Fraunces',Georgia,serif;
+  --fb:'Public Sans',-apple-system,sans-serif;
 }
 html{scroll-behavior:smooth;}
 body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19px;line-height:1.7;}
@@ -1904,13 +1903,13 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
 .page-header{background:var(--navy);color:#fff;padding:40px 28px 34px;text-align:center;}
 .ph-eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:10px;}
 .ph-title{font-family:var(--fd);font-size:clamp(1.8rem,6vw,2.6rem);font-weight:700;line-height:1.2;}
-.ph-sub{font-size:1.05rem;color:#c4d6f4;margin-top:10px;max-width:480px;margin-left:auto;margin-right:auto;}
+.ph-sub{font-size:1.05rem;color:#e3d6c0;margin-top:10px;max-width:480px;margin-left:auto;margin-right:auto;}
 
 /* WRAP - single column, generous spacing */
 .chwrap{max-width:680px;margin:0 auto;padding:28px 20px 70px;}
 
 /* SECTION */
-.sheet-section{background:var(--white);border:2px solid var(--g200);border-radius:16px;margin-bottom:22px;overflow:hidden;box-shadow:0 2px 10px rgba(10,22,40,.06);}
+.sheet-section{background:var(--white);border:2px solid var(--g200);border-radius:16px;margin-bottom:22px;overflow:hidden;box-shadow:0 2px 10px rgba(28,22,16,.06);}
 .sheet-head{display:flex;align-items:center;gap:14px;padding:20px 22px;border-bottom:2px solid var(--g100);background:var(--g50);}
 .sheet-head-icon{font-size:1.8rem;width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:var(--white);border:2px solid var(--g200);}
 .sheet-head-title{font-family:var(--fd);font-size:1.35rem;font-weight:700;color:var(--navy);line-height:1.2;}
@@ -1934,8 +1933,8 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
 /* COLOR BOXES */
 .box{border-radius:12px;padding:18px 20px;margin:16px 0;font-size:.96rem;line-height:1.65;}
 .box-good{background:var(--s2);border:2px solid var(--success);color:#0a3320;}
-.box-warn{background:var(--w2);border:2px solid var(--warn);color:#5a3e00;}
-.box-info{background:var(--i2);border:2px solid var(--info);color:#0f2040;}
+.box-warn{background:var(--w2);border:2px solid var(--warn);color:#5c2e1a;}
+.box-info{background:var(--i2);border:2px solid var(--info);color:#2b2116;}
 .box-title{font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:1.02rem;}
 .box-good .box-title{color:var(--success);}
 .box-warn .box-title{color:var(--warn);}
@@ -1954,13 +1953,13 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
 /* KEY ROW */
 .key-row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--g100);}
 .key-row:last-child{border-bottom:none;}
-.chkbd{background:var(--white);border:2px solid var(--g200);border-radius:8px;padding:6px 14px;font-family:monospace;font-size:1rem;font-weight:700;color:var(--navy2);box-shadow:0 2px 0 var(--g200);}
+.chkbd{background:var(--white);border:2px solid var(--g200);border-radius:8px;padding:6px 14px;font-family:'IBM Plex Mono',monospace;font-size:1rem;font-weight:700;color:var(--navy2);box-shadow:0 2px 0 var(--g200);}
 .key-desc{font-size:.96rem;color:var(--g700);}
 
 /* PRINT HINT */
-.print-hint{text-align:center;background:var(--gold4);border:2px dashed var(--gold);border-radius:12px;padding:16px;margin-bottom:24px;font-size:.95rem;color:#7d5700;}
+.print-hint{text-align:center;background:var(--gold4);border:2px dashed var(--gold);border-radius:12px;padding:16px;margin-bottom:24px;font-size:.95rem;color:#7a3d22;}
 
-.chfooter{background:var(--navy);color:#5b87d4;text-align:center;padding:30px 24px;font-size:.9rem;line-height:1.7;}
+.chfooter{background:var(--navy);color:#a38970;text-align:center;padding:30px 24px;font-size:.9rem;line-height:1.7;}
 .chfooter strong{color:var(--gold);}
 
 @media(max-width:480px){
@@ -2221,8 +2220,8 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --mnavy:#0a1628;--mnavy2:#162c58;--mnavy3:#1e3a70;
-  --mgold:#d4a017;--mgold2:#e2ba45;--mgold3:#f7e7b6;--mgold4:#fdf8ea;
+  --mnavy:#1c1610;--mnavy2:#3b342a;--mnavy3:#55493a;
+  --mgold:#c67d52;--mgold2:#d9a17a;--mgold3:#f2dfce;--mgold4:#fbf3ec;
   --mwhite:#fff;--moff:#f9f8f5;--mgray50:#f6f5f2;--mgray100:#f3f2ef;
   --mgray200:#e8e6e1;--mgray400:#b8b3aa;--mgray500:#908a80;--mgray600:#6e6860;
   --mgray700:#4e4a44;--mgray800:#33302c;
@@ -2230,10 +2229,10 @@ body{font-family:var(--fb);background:var(--off);color:var(--g800);font-size:19p
   --mwarn:#c47f00;--mwarn2:#fff8e6;
   --mdanger:#b52b2b;--mdanger2:#fdf0f0;
   --minfo:#1e5fa3;--minfo2:#e8f0fb;
-  --mfd:'Cormorant Garamond',Georgia,serif;
-  --mfb:'Inter',-apple-system,sans-serif;
-  --msh:0 2px 8px rgba(10,22,40,.08);
-  --msh2:0 4px 20px rgba(10,22,40,.12);
+  --mfd:'Fraunces',Georgia,serif;
+  --mfb:'Public Sans',-apple-system,sans-serif;
+  --msh:0 2px 8px rgba(28,22,16,.08);
+  --msh2:0 4px 20px rgba(28,22,16,.12);
 }
 html{scroll-behavior:smooth;}
 body{font-family:var(--mfb);background:var(--moff);color:var(--mgray800);line-height:1.7;font-size:16px;}
@@ -2242,13 +2241,13 @@ a:hover{text-decoration:underline;}
 
 /* COVER */
 .cover{background:linear-gradient(160deg,var(--mnavy) 0%,var(--mnavy3) 100%);color:#fff;padding:72px 32px 56px;text-align:center;position:relative;overflow:hidden;}
-.cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(39,77,150,.4),transparent);pointer-events:none;}
-.cover-badge{position:relative;display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(212,160,23,.15);border:1px solid rgba(212,160,23,.35);border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mgold2);margin-bottom:18px;}
+.cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(110,99,83,.4),transparent);pointer-events:none;}
+.cover-badge{position:relative;display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(198,125,82,.15);border:1px solid rgba(198,125,82,.35);border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mgold2);margin-bottom:18px;}
 .cover h1{font-family:var(--mfd);font-size:clamp(2rem,5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:10px;position:relative;}
 .cover h1 em{font-style:italic;color:var(--mgold2);}
-.cover-sub{font-size:.98rem;color:#c4d6f4;max-width:540px;margin:0 auto 24px;position:relative;}
+.cover-sub{font-size:.98rem;color:#e3d6c0;max-width:540px;margin:0 auto 24px;position:relative;}
 .cover-meta{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;position:relative;}
-.cover-pill{font-size:.78rem;color:#8aaee3;display:flex;align-items:center;gap:6px;}
+.cover-pill{font-size:.78rem;color:#c6b49c;display:flex;align-items:center;gap:6px;}
 
 /* LAYOUT */
 .mwrap{max-width:860px;margin:0 auto;padding:40px 24px 80px;}
@@ -2267,7 +2266,7 @@ a:hover{text-decoration:underline;}
 .exp-row{display:flex;gap:10px;margin-bottom:18px;}
 .exp-btn{padding:7px 16px;border-radius:7px;font-size:.79rem;font-weight:700;cursor:pointer;border:1px solid var(--mgray200);background:var(--mwhite);color:var(--mnavy);transition:.2s;}
 .exp-btn:hover{background:var(--mnavy);color:#fff;border-color:var(--mnavy);}
-.exp-btn.gold{background:linear-gradient(135deg,var(--mgold2),var(--mgold));color:var(--mnavy);border:none;box-shadow:0 2px 10px rgba(212,160,23,.3);}
+.exp-btn.gold{background:linear-gradient(135deg,var(--mgold2),var(--mgold));color:var(--mnavy);border:none;box-shadow:0 2px 10px rgba(198,125,82,.3);}
 
 /* COLLAPSIBLE SECTION */
 .sec{margin-bottom:10px;border:1px solid var(--mgray200);border-radius:12px;overflow:hidden;box-shadow:var(--msh);}
@@ -2276,11 +2275,11 @@ a:hover{text-decoration:underline;}
 .sec-trigger.open{background:var(--mnavy);}
 .sec-trigger-left{display:flex;align-items:center;gap:14px;}
 .sec-badge{width:32px;height:32px;border-radius:50%;background:var(--mgold3);color:var(--mnavy);font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s;}
-.sec-trigger.open .sec-badge{background:rgba(212,160,23,.2);color:var(--mgold2);}
+.sec-trigger.open .sec-badge{background:rgba(198,125,82,.2);color:var(--mgold2);}
 .sec-title{font-family:var(--mfd);font-size:1.08rem;font-weight:600;color:var(--mnavy);line-height:1.2;}
 .sec-trigger.open .sec-title{color:#fff;}
 .sec-sub{font-size:.76rem;color:var(--mgray500);margin-top:2px;}
-.sec-trigger.open .sec-sub{color:#8aaee3;}
+.sec-trigger.open .sec-sub{color:#c6b49c;}
 .sec-arrow{font-size:.72rem;color:var(--mgray400);transition:transform .3s;flex-shrink:0;}
 .sec-trigger.open .sec-arrow{transform:rotate(180deg);color:var(--mgold2);}
 .sec-body{display:none;padding:24px 28px;background:var(--mwhite);border-top:1px solid var(--mgray200);}
@@ -2293,14 +2292,14 @@ a:hover{text-decoration:underline;}
 .sec-body ul,.sec-body ol{padding-left:22px;margin-bottom:14px;color:var(--mgray700);font-size:.92rem;}
 .sec-body li{margin-bottom:5px;}
 .sec-body strong{color:var(--mgray800);}
-.sec-body code{background:var(--mgray100);border:1px solid var(--mgray200);border-radius:4px;padding:1px 6px;font-size:.83rem;font-family:monospace;}
+.sec-body code{background:var(--mgray100);border:1px solid var(--mgray200);border-radius:4px;padding:1px 6px;font-size:.83rem;font-family:'IBM Plex Mono',monospace;}
 
-.mkbd{background:#fff;border:1px solid var(--mgray200);border-radius:4px;padding:2px 8px;font-family:monospace;font-size:.82rem;box-shadow:0 1px 2px rgba(0,0,0,.1);}
+.mkbd{background:#fff;border:1px solid var(--mgray200);border-radius:4px;padding:2px 8px;font-family:'IBM Plex Mono',monospace;font-size:.82rem;box-shadow:0 1px 2px rgba(0,0,0,.1);}
 
-.tip{background:var(--minfo2);border-left:4px solid var(--minfo);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#0f2040;}
+.tip{background:var(--minfo2);border-left:4px solid var(--minfo);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#2b2116;}
 .tip strong{color:var(--minfo);}
-.note{background:var(--mgold4);border-left:4px solid var(--mgold);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#5a3e00;}
-.note strong{color:#7d5700;}
+.note{background:var(--mgold4);border-left:4px solid var(--mgold);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#5c2e1a;}
+.note strong{color:#7a3d22;}
 .warn{background:var(--mdanger2);border-left:4px solid var(--mdanger);border-radius:0 8px 8px 0;padding:13px 16px;margin:14px 0;font-size:.88rem;color:#5a1a1a;}
 .warn strong{color:var(--mdanger);}
 
@@ -2325,7 +2324,7 @@ a:hover{text-decoration:underline;}
 .mod-desc{font-size:.78rem;color:var(--mgray600);line-height:1.45;}
 
 /* FOOTER */
-.mfooter{background:var(--mnavy);color:#5b87d4;text-align:center;padding:28px;font-size:.8rem;}
+.mfooter{background:var(--mnavy);color:#a38970;text-align:center;padding:28px;font-size:.8rem;}
 .mfooter strong{color:var(--mgold);}
 
 /* ── VISUAL DIAGRAM BLOCKS ── */
@@ -2359,7 +2358,7 @@ a:hover{text-decoration:underline;}
 .save-loc-best{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--mgold);color:var(--mnavy);padding:2px 8px;border-radius:999px;margin-bottom:6px;}
 .save-loc-desc{font-size:.78rem;color:var(--mgray600);line-height:1.5;}
 
-.tip-box{background:var(--mgold4);border:1px dashed var(--mgold);border-radius:10px;padding:14px 16px;margin:14px 0;font-size:.88rem;color:#5a3e00;}
+.tip-box{background:var(--mgold4);border:1px dashed var(--mgold);border-radius:10px;padding:14px 16px;margin:14px 0;font-size:.88rem;color:#5c2e1a;}
 
 @media(max-width:600px){
   .mwrap{padding:20px 14px 60px;}
@@ -2477,35 +2476,35 @@ a:hover{text-decoration:underline;}
       <svg viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg">
         <!-- File icon -->
         <g transform="translate(40,20)">
-          <rect x="0" y="0" width="80" height="100" rx="6" fill="#ffffff" stroke="#c4d6f4" stroke-width="2"/>
+          <rect x="0" y="0" width="80" height="100" rx="6" fill="#ffffff" stroke="#e3d6c0" stroke-width="2"/>
           <path d="M0,0 L80,0 L80,100 L0,100 Z" fill="none"/>
-          <rect x="10" y="14" width="60" height="6" rx="2" fill="#e2ba45"/>
-          <rect x="10" y="28" width="60" height="6" rx="2" fill="#c4d6f4"/>
-          <rect x="10" y="42" width="40" height="6" rx="2" fill="#c4d6f4"/>
-          <circle cx="40" cy="72" r="14" fill="#0a1628"/>
-          <text x="40" y="77" font-size="13" fill="#d4a017" text-anchor="middle" font-weight="700">🏛</text>
+          <rect x="10" y="14" width="60" height="6" rx="2" fill="#d9a17a"/>
+          <rect x="10" y="28" width="60" height="6" rx="2" fill="#e3d6c0"/>
+          <rect x="10" y="42" width="40" height="6" rx="2" fill="#e3d6c0"/>
+          <circle cx="40" cy="72" r="14" fill="#1c1610"/>
+          <text x="40" y="77" font-size="13" fill="#c67d52" text-anchor="middle" font-weight="700">🏛</text>
         </g>
-        <text x="80" y="135" font-size="13" fill="#4e4a44" text-anchor="middle" font-family="Inter,sans-serif">index.html</text>
+        <text x="80" y="135" font-size="13" fill="#4e4a44" text-anchor="middle" font-family="Public Sans,sans-serif">index.html</text>
         <!-- Arrow -->
-        <path d="M150,60 L220,60" stroke="#d4a017" stroke-width="3" marker-end="url(#arrow1)"/>
-        <defs><marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#d4a017"/></marker></defs>
+        <path d="M150,60 L220,60" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow1)"/>
+        <defs><marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c67d52"/></marker></defs>
         <!-- Browser icon -->
         <g transform="translate(250,15)">
-          <rect x="0" y="0" width="110" height="80" rx="8" fill="#0a1628"/>
+          <rect x="0" y="0" width="110" height="80" rx="8" fill="#1c1610"/>
           <circle cx="20" cy="16" r="4" fill="#e60023"/>
-          <circle cx="34" cy="16" r="4" fill="#e2ba45"/>
+          <circle cx="34" cy="16" r="4" fill="#d9a17a"/>
           <circle cx="48" cy="16" r="4" fill="#1a7a4a"/>
           <rect x="10" y="30" width="90" height="40" rx="4" fill="#ffffff"/>
-          <text x="55" y="54" font-size="11" fill="#0a1628" text-anchor="middle" font-weight="700">🏛️</text>
+          <text x="55" y="54" font-size="11" fill="#1c1610" text-anchor="middle" font-weight="700">🏛️</text>
         </g>
-        <text x="305" y="135" font-size="13" fill="#4e4a44" text-anchor="middle" font-family="Inter,sans-serif">Opens in your browser</text>
+        <text x="305" y="135" font-size="13" fill="#4e4a44" text-anchor="middle" font-family="Public Sans,sans-serif">Opens in your browser</text>
         <!-- Result -->
-        <path d="M380,60 L430,60" stroke="#d4a017" stroke-width="3" marker-end="url(#arrow1)"/>
+        <path d="M380,60 L430,60" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow1)"/>
         <g transform="translate(450,15)">
           <rect x="0" y="0" width="110" height="80" rx="8" fill="#1a7a4a"/>
           <text x="55" y="48" font-size="30" text-anchor="middle">✓</text>
         </g>
-        <text x="505" y="135" font-size="13" fill="#1a7a4a" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700">App is open!</text>
+        <text x="505" y="135" font-size="13" fill="#1a7a4a" text-anchor="middle" font-family="Public Sans,sans-serif" font-weight="700">App is open!</text>
       </svg>
       <p class="diagram-caption">Double-clicking the file opens it directly in your browser — just like opening a photo or a document</p>
     </div>
@@ -2547,25 +2546,25 @@ a:hover{text-decoration:underline;}
     <h3 style="margin-top:24px;">Step-by-Step: Opening on a Windows Computer</h3>
     <div class="big-step-grid">
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="60" rx="4" fill="#fff" stroke="#0a1628" stroke-width="2"/><rect x="18" y="28" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="36" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="44" width="50" height="4" fill="#d4a017"/><circle cx="50" cy="64" r="8" fill="#0a1628"/></svg>
+        <svg viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="60" rx="4" fill="#fff" stroke="#1c1610" stroke-width="2"/><rect x="18" y="28" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="36" width="64" height="4" fill="#e8e6e1"/><rect x="18" y="44" width="50" height="4" fill="#c67d52"/><circle cx="50" cy="64" r="8" fill="#1c1610"/></svg>
         <div class="big-step-num">1</div>
         <div class="big-step-label">Find the file</div>
         <div class="big-step-desc">In your Downloads folder, or wherever you saved it</div>
       </div>
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="#0a1628" stroke-width="2"/><circle cx="50" cy="50" r="6" fill="#d4a017"/><text x="50" y="20" font-size="10" text-anchor="middle" fill="#0a1628">click</text><text x="50" y="90" font-size="10" text-anchor="middle" fill="#0a1628">click</text></svg>
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="#1c1610" stroke-width="2"/><circle cx="50" cy="50" r="6" fill="#c67d52"/><text x="50" y="20" font-size="10" text-anchor="middle" fill="#1c1610">click</text><text x="50" y="90" font-size="10" text-anchor="middle" fill="#1c1610">click</text></svg>
         <div class="big-step-num">2</div>
         <div class="big-step-label">Double-click it</div>
         <div class="big-step-desc">Click the mouse button twice, quickly, on the file</div>
       </div>
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><rect x="5" y="10" width="90" height="65" rx="6" fill="#0a1628"/><circle cx="18" cy="20" r="3" fill="#e60023"/><circle cx="28" cy="20" r="3" fill="#e2ba45"/><circle cx="38" cy="20" r="3" fill="#1a7a4a"/><rect x="10" y="30" width="80" height="38" fill="#fff"/><text x="50" y="53" font-size="18" text-anchor="middle">🏛️</text></svg>
+        <svg viewBox="0 0 100 100"><rect x="5" y="10" width="90" height="65" rx="6" fill="#1c1610"/><circle cx="18" cy="20" r="3" fill="#e60023"/><circle cx="28" cy="20" r="3" fill="#d9a17a"/><circle cx="38" cy="20" r="3" fill="#1a7a4a"/><rect x="10" y="30" width="80" height="38" fill="#fff"/><text x="50" y="53" font-size="18" text-anchor="middle">🏛️</text></svg>
         <div class="big-step-num">3</div>
         <div class="big-step-label">Browser opens</div>
         <div class="big-step-desc">Your screen shows the welcome page automatically</div>
       </div>
       <div class="big-step">
-        <svg viewBox="0 0 100 100"><rect x="15" y="35" width="70" height="28" rx="14" fill="#d4a017"/><text x="50" y="53" font-size="9" text-anchor="middle" fill="#0a1628" font-weight="700">Get Access</text></svg>
+        <svg viewBox="0 0 100 100"><rect x="15" y="35" width="70" height="28" rx="14" fill="#c67d52"/><text x="50" y="53" font-size="9" text-anchor="middle" fill="#1c1610" font-weight="700">Get Access</text></svg>
         <div class="big-step-num">4</div>
         <div class="big-step-label">Click gold button</div>
         <div class="big-step-desc">Click "Get Instant Access" — your Dashboard appears</div>
@@ -2760,14 +2759,14 @@ a:hover{text-decoration:underline;}
       <svg viewBox="0 0 620 160" xmlns="http://www.w3.org/2000/svg">
         <!-- App box -->
         <g transform="translate(20,30)">
-          <rect x="0" y="0" width="130" height="90" rx="8" fill="#0a1628"/>
-          <text x="65" y="35" font-size="11" fill="#e2ba45" text-anchor="middle" font-weight="700">Your Typed</text>
-          <text x="65" y="50" font-size="11" fill="#e2ba45" text-anchor="middle" font-weight="700">Information</text>
-          <rect x="20" y="60" width="90" height="18" rx="9" fill="#d4a017"/>
-          <text x="65" y="73" font-size="9" fill="#0a1628" text-anchor="middle" font-weight="700">💾 Backup</text>
+          <rect x="0" y="0" width="130" height="90" rx="8" fill="#1c1610"/>
+          <text x="65" y="35" font-size="11" fill="#d9a17a" text-anchor="middle" font-weight="700">Your Typed</text>
+          <text x="65" y="50" font-size="11" fill="#d9a17a" text-anchor="middle" font-weight="700">Information</text>
+          <rect x="20" y="60" width="90" height="18" rx="9" fill="#c67d52"/>
+          <text x="65" y="73" font-size="9" fill="#1c1610" text-anchor="middle" font-weight="700">💾 Backup</text>
         </g>
-        <path d="M160,75 L210,75" stroke="#d4a017" stroke-width="3" marker-end="url(#arrow2)"/>
-        <defs><marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#d4a017"/></marker></defs>
+        <path d="M160,75 L210,75" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow2)"/>
+        <defs><marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c67d52"/></marker></defs>
         <!-- File created -->
         <g transform="translate(225,25)">
           <rect x="0" y="0" width="70" height="90" rx="6" fill="#fff" stroke="#1a7a4a" stroke-width="2.5"/>
@@ -2776,22 +2775,22 @@ a:hover{text-decoration:underline;}
           <rect x="10" y="38" width="35" height="5" fill="#e8e6e1"/>
           <text x="35" y="65" font-size="20" text-anchor="middle">📄</text>
         </g>
-        <text x="260" y="135" font-size="11" fill="#4e4a44" text-anchor="middle" font-family="Inter,sans-serif">A real file is created</text>
-        <path d="M310,75 L360,75" stroke="#d4a017" stroke-width="3" marker-end="url(#arrow2)"/>
+        <text x="260" y="135" font-size="11" fill="#4e4a44" text-anchor="middle" font-family="Public Sans,sans-serif">A real file is created</text>
+        <path d="M310,75 L360,75" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow2)"/>
         <!-- You save it -->
         <g transform="translate(375,25)">
-          <rect x="0" y="0" width="90" height="90" rx="8" fill="#fdf8ea" stroke="#d4a017" stroke-width="2"/>
+          <rect x="0" y="0" width="90" height="90" rx="8" fill="#fbf3ec" stroke="#c67d52" stroke-width="2"/>
           <text x="45" y="40" font-size="24" text-anchor="middle">📁</text>
-          <text x="45" y="68" font-size="9" fill="#7d5700" text-anchor="middle" font-weight="700">You choose</text>
-          <text x="45" y="80" font-size="9" fill="#7d5700" text-anchor="middle" font-weight="700">where to save</text>
+          <text x="45" y="68" font-size="9" fill="#7a3d22" text-anchor="middle" font-weight="700">You choose</text>
+          <text x="45" y="80" font-size="9" fill="#7a3d22" text-anchor="middle" font-weight="700">where to save</text>
         </g>
-        <path d="M480,75 L530,75" stroke="#d4a017" stroke-width="3" marker-end="url(#arrow2)"/>
+        <path d="M480,75 L530,75" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow2)"/>
         <!-- Safe -->
         <g transform="translate(545,25)">
           <rect x="0" y="0" width="60" height="90" rx="8" fill="#1a7a4a"/>
           <text x="30" y="55" font-size="26" text-anchor="middle">🔒</text>
         </g>
-        <text x="575" y="135" font-size="11" fill="#1a7a4a" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700">Safely stored</text>
+        <text x="575" y="135" font-size="11" fill="#1a7a4a" text-anchor="middle" font-family="Public Sans,sans-serif" font-weight="700">Safely stored</text>
       </svg>
       <p class="diagram-caption">Clicking Backup turns your information into a real file — then YOU decide where that file lives, just like saving a photo</p>
     </div>
@@ -2816,20 +2815,20 @@ a:hover{text-decoration:underline;}
       <div class="diagram-title">Your Simple Backup Schedule</div>
       <svg viewBox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
         <line x1="40" y1="65" x2="560" y2="65" stroke="#e8e6e1" stroke-width="3"/>
-        <circle cx="80" cy="65" r="10" fill="#d4a017"/>
-        <text x="80" y="35" font-size="11" text-anchor="middle" fill="#0a1628" font-weight="700">Today</text>
+        <circle cx="80" cy="65" r="10" fill="#c67d52"/>
+        <text x="80" y="35" font-size="11" text-anchor="middle" fill="#1c1610" font-weight="700">Today</text>
         <text x="80" y="95" font-size="10" text-anchor="middle" fill="#6e6860">First backup</text>
         <text x="80" y="108" font-size="10" text-anchor="middle" fill="#6e6860">right after setup</text>
         <circle cx="240" cy="65" r="10" fill="#1e5fa3"/>
-        <text x="240" y="35" font-size="11" text-anchor="middle" fill="#0a1628" font-weight="700">After Big Updates</text>
+        <text x="240" y="35" font-size="11" text-anchor="middle" fill="#1c1610" font-weight="700">After Big Updates</text>
         <text x="240" y="95" font-size="10" text-anchor="middle" fill="#6e6860">Anytime you add</text>
         <text x="240" y="108" font-size="10" text-anchor="middle" fill="#6e6860">several new entries</text>
         <circle cx="400" cy="65" r="10" fill="#1a7a4a"/>
-        <text x="400" y="35" font-size="11" text-anchor="middle" fill="#0a1628" font-weight="700">Every 3 Months</text>
+        <text x="400" y="35" font-size="11" text-anchor="middle" fill="#1c1610" font-weight="700">Every 3 Months</text>
         <text x="400" y="95" font-size="10" text-anchor="middle" fill="#6e6860">A standing reminder,</text>
         <text x="400" y="108" font-size="10" text-anchor="middle" fill="#6e6860">even with no changes</text>
         <circle cx="540" cy="65" r="10" fill="#c47f00"/>
-        <text x="540" y="35" font-size="11" text-anchor="middle" fill="#0a1628" font-weight="700">Life Changes</text>
+        <text x="540" y="35" font-size="11" text-anchor="middle" fill="#1c1610" font-weight="700">Life Changes</text>
         <text x="540" y="95" font-size="10" text-anchor="middle" fill="#6e6860">New account,</text>
         <text x="540" y="108" font-size="10" text-anchor="middle" fill="#6e6860">move, marriage, etc.</text>
       </svg>
@@ -2868,31 +2867,31 @@ a:hover{text-decoration:underline;}
       <div class="diagram-title">Where to Find Your Saved Backup Afterward</div>
       <svg viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
         <g transform="translate(20,20)">
-          <rect x="0" y="0" width="150" height="100" rx="8" fill="#fff" stroke="#0a1628" stroke-width="2"/>
-          <text x="75" y="22" font-size="11" fill="#0a1628" text-anchor="middle" font-weight="700">📁 Downloads</text>
+          <rect x="0" y="0" width="150" height="100" rx="8" fill="#fff" stroke="#1c1610" stroke-width="2"/>
+          <text x="75" y="22" font-size="11" fill="#1c1610" text-anchor="middle" font-weight="700">📁 Downloads</text>
           <rect x="14" y="34" width="120" height="16" rx="3" fill="#f6f5f2"/>
           <text x="20" y="46" font-size="9" fill="#6e6860">life-legacy-backup.json</text>
           <text x="75" y="80" font-size="9" fill="#908a80" text-anchor="middle">(most browsers save</text>
           <text x="75" y="92" font-size="9" fill="#908a80" text-anchor="middle">here automatically)</text>
         </g>
-        <path d="M185,70 L235,70" stroke="#d4a017" stroke-width="3" marker-end="url(#arrow3)"/>
-        <defs><marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#d4a017"/></marker></defs>
+        <path d="M185,70 L235,70" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow3)"/>
+        <defs><marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c67d52"/></marker></defs>
         <text x="210" y="55" font-size="9" fill="#6e6860" text-anchor="middle">then move it to:</text>
         <g transform="translate(250,20)">
-          <rect x="0" y="0" width="150" height="100" rx="8" fill="#fdf8ea" stroke="#d4a017" stroke-width="2"/>
-          <text x="75" y="22" font-size="11" fill="#7d5700" text-anchor="middle" font-weight="700">📁 Documents ›</text>
-          <text x="75" y="36" font-size="11" fill="#7d5700" text-anchor="middle" font-weight="700">Life and Legacy</text>
+          <rect x="0" y="0" width="150" height="100" rx="8" fill="#fbf3ec" stroke="#c67d52" stroke-width="2"/>
+          <text x="75" y="22" font-size="11" fill="#7a3d22" text-anchor="middle" font-weight="700">📁 Documents ›</text>
+          <text x="75" y="36" font-size="11" fill="#7a3d22" text-anchor="middle" font-weight="700">Life and Legacy</text>
           <rect x="14" y="48" width="120" height="16" rx="3" fill="#fff"/>
           <text x="20" y="60" font-size="9" fill="#6e6860">life-legacy-backup.json</text>
-          <text x="75" y="84" font-size="9" fill="#a37300" text-anchor="middle">your permanent home</text>
+          <text x="75" y="84" font-size="9" fill="#8f5030" text-anchor="middle">your permanent home</text>
         </g>
-        <path d="M420,70 L470,70" stroke="#d4a017" stroke-width="3" marker-end="url(#arrow3)"/>
+        <path d="M420,70 L470,70" stroke="#c67d52" stroke-width="3" marker-end="url(#arrow3)"/>
         <text x="445" y="55" font-size="9" fill="#6e6860" text-anchor="middle">+ copy to:</text>
         <g transform="translate(485,20)">
-          <rect x="0" y="0" width="100" height="100" rx="8" fill="#0a1628"/>
+          <rect x="0" y="0" width="100" height="100" rx="8" fill="#1c1610"/>
           <text x="50" y="50" font-size="30" text-anchor="middle">🔌</text>
-          <text x="50" y="80" font-size="9" fill="#e2ba45" text-anchor="middle" font-weight="700">USB Drive</text>
-          <text x="50" y="92" font-size="9" fill="#8aaee3" text-anchor="middle">(backup copy)</text>
+          <text x="50" y="80" font-size="9" fill="#d9a17a" text-anchor="middle" font-weight="700">USB Drive</text>
+          <text x="50" y="92" font-size="9" fill="#c6b49c" text-anchor="middle">(backup copy)</text>
         </g>
       </svg>
       <p class="diagram-caption">Most browsers automatically save new downloads into a folder called "Downloads" — move it from there into your permanent folder</p>
@@ -3195,7 +3194,7 @@ a:hover{text-decoration:underline;}
   <strong>Life &amp; Legacy Vault</strong> · User Manual v2.0<br>
   Your data is private, offline, and entirely under your control.<br>
   <br>
-  <em style="color:#3a6abf;font-size:.75rem;">This system is an organizational tool and does not constitute legal, financial, or medical advice. Please consult a licensed professional for estate planning requirements in your jurisdiction.</em>
+  <em style="color:#8b7a64;font-size:.75rem;">This system is an organizational tool and does not constitute legal, financial, or medical advice. Please consult a licensed professional for estate planning requirements in your jurisdiction.</em>
 </footer>
 <script>
 function toggleManSec(trigger) {
@@ -3222,60 +3221,60 @@ window.addEventListener('load', () => openManSec('s1'));
 <div id="page-landing" class="page active">
 
   <!-- Welcome Screen -->
-  <div style="min-height:100vh; background:linear-gradient(160deg,#0a1628 0%,#111f40 60%,#0a1628 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 24px; text-align:center; position:relative; overflow:hidden;">
+  <div style="min-height:100vh; background:linear-gradient(160deg,#1c1610 0%,#2b2116 60%,#1c1610 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 24px; text-align:center; position:relative; overflow:hidden;">
 
     <!-- Background radial glow -->
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 20%,rgba(30,60,130,0.45),transparent 65%);pointer-events:none;"></div>
 
     <!-- Badge -->
-    <div style="position:relative;display:inline-flex;align-items:center;gap:8px;padding:5px 18px;background:rgba(212,160,23,0.12);border:1px solid rgba(212,160,23,0.3);border-radius:100px;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#e2ba45;margin-bottom:28px;">
+    <div style="position:relative;display:inline-flex;align-items:center;gap:8px;padding:5px 18px;background:rgba(198,125,82,0.12);border:1px solid rgba(198,125,82,0.3);border-radius:100px;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#d9a17a;margin-bottom:28px;">
       ✦ &nbsp;Purchase confirmed — your access is ready
     </div>
 
     <!-- Logo -->
-    <div style="position:relative;width:72px;height:72px;background:linear-gradient(135deg,#e2b93e,#c99200);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;margin-bottom:24px;box-shadow:0 8px 32px rgba(212,160,23,0.3);">🏛️</div>
+    <div style="position:relative;width:72px;height:72px;background:linear-gradient(135deg,#e2b93e,#b5673b);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;margin-bottom:24px;box-shadow:0 8px 32px rgba(198,125,82,0.3);">🏛️</div>
 
     <!-- Headline -->
-    <h1 style="position:relative;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:12px;">
-      Life &amp; Legacy<br><em style="font-style:italic;color:#e2ba45;">Vault</em>
+    <h1 style="position:relative;font-family:'Fraunces',Georgia,serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:12px;">
+      Life &amp; Legacy<br><em style="font-style:italic;color:#d9a17a;">Vault</em>
     </h1>
-    <p style="position:relative;font-size:1rem;color:#7a9bbf;max-width:440px;margin:0 auto 40px;line-height:1.65;">
+    <p style="position:relative;font-size:1rem;color:#a38970;max-width:440px;margin:0 auto 40px;line-height:1.65;">
       Welcome. This is your family's operating manual — how your household and business run, what to do if you're ever unreachable, and where everything lives. Everything you enter is saved automatically in this browser.
     </p>
 
     <!-- Main CTA -->
-    <button onclick="enterApp()" style="position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 48px;background:linear-gradient(135deg,#e2b93e,#c99200);color:#0a1628;font-family:'Inter',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:0.03em;border:none;border-radius:12px;cursor:pointer;box-shadow:0 6px 28px rgba(212,160,23,0.4);transition:transform 0.2s,box-shadow 0.2s;margin-bottom:14px;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 10px 36px rgba(212,160,23,0.55)'" onmouseout="this.style.transform='';this.style.boxShadow='0 6px 28px rgba(212,160,23,0.4)'">
+    <button onclick="enterApp()" style="position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 48px;background:linear-gradient(135deg,#e2b93e,#b5673b);color:#1c1610;font-family:'Public Sans',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:0.03em;border:none;border-radius:12px;cursor:pointer;box-shadow:0 6px 28px rgba(198,125,82,0.4);transition:transform 0.2s,box-shadow 0.2s;margin-bottom:14px;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 10px 36px rgba(198,125,82,0.55)'" onmouseout="this.style.transform='';this.style.boxShadow='0 6px 28px rgba(198,125,82,0.4)'">
       🔓 &nbsp;Open My Vault
     </button>
 
-    <p style="position:relative;font-size:0.78rem;color:#4d7aac;margin-bottom:48px;">
+    <p style="position:relative;font-size:0.78rem;color:#8b7a64;margin-bottom:48px;">
       Your data saves privately in this browser — click above to begin, or continue where you left off
     </p>
 
     <!-- 3 trust pills -->
     <div style="position:relative;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:48px;">
-      <div style="display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:0.78rem;color:#c4d6f4;">🔒 <span>100% offline — your data stays on your device</span></div>
-      <div style="display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:0.78rem;color:#c4d6f4;">💾 <span>Backup anytime with the 💾 button inside</span></div>
-      <div style="display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:0.78rem;color:#c4d6f4;">📱 <span>Works on desktop, tablet &amp; mobile</span></div>
+      <div style="display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:0.78rem;color:#e3d6c0;">🔒 <span>100% offline — your data stays on your device</span></div>
+      <div style="display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:0.78rem;color:#e3d6c0;">💾 <span>Backup anytime with the 💾 button inside</span></div>
+      <div style="display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:0.78rem;color:#e3d6c0;">📱 <span>Works on desktop, tablet &amp; mobile</span></div>
     </div>
 
     <!-- Module quick-links -->
     <div style="position:relative;max-width:640px;width:100%;">
-      <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4d7aac;margin-bottom:14px;">What's inside your Vault</p>
+      <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8b7a64;margin-bottom:14px;">What's inside your Vault</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;">
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">👨‍👩‍👧‍👦 Personal Profiles</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">📂 Document Vault</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">💻 Digital Life Vault</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">🏦 Banking</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">🛡️ Insurance</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">📈 Investments</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">🔑 Passwords</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">₿ Crypto</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">🏠 Property</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">🚨 Emergency Plan</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">🕊️ Final Wishes</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">✉️ Legacy Letters</div>
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#c4d6f4;text-align:left;">+&nbsp;6 more modules</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">👨‍👩‍👧‍👦 Personal Profiles</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">📂 Document Vault</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">💻 Digital Life Vault</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">🏦 Banking</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">🛡️ Insurance</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">📈 Investments</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">🔑 Passwords</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">₿ Crypto</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">🏠 Property</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">🚨 Emergency Plan</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">🕊️ Final Wishes</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">✉️ Legacy Letters</div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 12px;font-size:0.75rem;color:#e3d6c0;text-align:left;">+&nbsp;6 more modules</div>
       </div>
     </div>
 
@@ -3422,7 +3421,7 @@ window.addEventListener('load', () => openManSec('s1'));
 
           <!-- Hero Banner -->
           <div class="dashboard-hero">
-            <div class="dashboard-hero-eyebrow">🏛️ Life &amp; Legacy Vault &nbsp;·&nbsp; <span style="font-size:0.7rem;opacity:0.6;font-family:'Inter',sans-serif;font-weight:400;">© 2026 TheSnagTag · Single-Household License</span></div>
+            <div class="dashboard-hero-eyebrow">🏛️ Life &amp; Legacy Vault &nbsp;·&nbsp; <span style="font-size:0.7rem;opacity:0.6;font-family:'Public Sans',sans-serif;font-weight:400;">© 2026 TheSnagTag · Single-Household License</span></div>
             <h2 id="dashGreeting">Welcome to Your Family's Life &amp; Legacy Vault</h2>
             <p>More than an estate plan — this is your Family Operating Manual: how your household and business run, what to do if you become unreachable, and where everything your loved ones would need tomorrow actually lives.</p>
             <div class="dashboard-stats" id="dashStats"></div>
@@ -4053,7 +4052,7 @@ function openEmbeddedDoc(templateId, title) {
   const html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
     + '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
     + '<title>' + (title || 'Life & Legacy Vault') + '</title>'
-    + '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">'
+    + '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,380..600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">'
     + '</head><body>' + inner + '</body></html>';
   const blob = new Blob([html], { type: 'text/html' });
   const url = URL.createObjectURL(blob);
@@ -5991,8 +5990,8 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden') saveData();
 });
 
-console.log('%c🏛️ Life & Legacy Vault v2.0.0', 'color:#d4a017; font-size:16px; font-weight:bold; background:#0a1628; padding:8px 16px; border-radius:4px;');
-console.log('%cAll data stored locally. Use Ctrl+S (Cmd+S on Mac) to export a JSON backup.', 'color:#8aaee3;');
+console.log('%c🏛️ Life & Legacy Vault v2.0.0', 'color:#c67d52; font-size:16px; font-weight:bold; background:#1c1610; padding:8px 16px; border-radius:4px;');
+console.log('%cAll data stored locally. Use Ctrl+S (Cmd+S on Mac) to export a JSON backup.', 'color:#c6b49c;');
 </script>
 
 <!-- ── PERSISTENT LICENSE WATERMARK ── -->
